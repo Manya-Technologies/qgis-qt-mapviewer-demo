@@ -44,6 +44,8 @@ A minimal Qt C++ demo application showing how to embed a QGIS map canvas and dis
 git clone https://github.com/manya-technologies/qgis-qt-mapviewer-demo.git
 cd qgis-qt-mapviewer-demo
 
+---
+
 ### 🛠️ Step 2: Run `qmake` and build
 
 #### 🔹 On Linux:
