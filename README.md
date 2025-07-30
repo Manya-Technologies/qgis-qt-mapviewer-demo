@@ -39,6 +39,8 @@ Make sure `OSGEO4W_ROOT` is set correctly in your `.pro` file or environment.
 git clone https://github.com/manya-technologies/qgis-qt-mapviewer-demo.git
 cd qgis-qt-mapviewer-demo
 
+---
+
 ### Step 2: Run qmake and build
 
 On Linux
@@ -57,11 +59,17 @@ qmake
 nmake   (or mingw32-make)
 qgis-qt-mapviewer-demo.exe
 
+---
+
 📂 Sample Shapefile
 Place your sample shapefile (e.g., Borders.shp, .dbf, .shx) inside the resources/ directory or adjust the layer path in main.cpp.
 
+---
+
 🧾 License
 This project is licensed under the MIT License. See the LICENSE file for more info.
+
+---
 
 💬 Contact
 Manya Technologies
