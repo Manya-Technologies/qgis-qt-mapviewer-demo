@@ -2,84 +2,58 @@
 
 A minimal Qt C++ demo application showing how to embed a QGIS map canvas and display a shapefile using the QGIS C++ API.
 
----
+![QGIS Map Viewer By Manya Technologies](images/output.png)
 
 ## 🧰 Tech Stack
-
 - Qt 5 / Qt 6 (Widgets)
 - QGIS C++ API (`qgis_core`, `qgis_gui`)
 - GDAL and PROJ dependencies
-- Built using **qmake**
-
----
+- Built using qmake
+- Compiler:  
+  - **MinGW64** (Linux/Ubuntu)  
+  - **Visual Studio 2022** (Windows)
 
 ## 🚀 Features
-
 - Loads and renders a shapefile layer on a `QgsMapCanvas`
-- Supports EPSG:4326 coordinate reference system
+- Supports **EPSG:4326** coordinate reference system
 - Demonstrates integration with:
   - `QgsVectorLayer`
   - `QgsProject`
-  - Basic map interaction
-
----
+- Basic map interaction
 
 ## 📦 Prerequisites
-
-- **Qt 6** (with `qmake` installed)
-- **QGIS-DEV** libraries installed via:
+- Qt 5 / 6 (with qmake installed)
+- QGIS-DEV libraries installed via:
   - OSGeo4W (Windows)
   - System packages (Linux)
-- **C++17-compatible** compiler
-
-> ✅ Ensure that the `OSGEO4W_ROOT` path is correctly set in your `.pro` file or your environment.
-
----
+- C++17-compatible compiler
+- ✅ Add the following to your `PATH` environment variable:
+  - Qt6 library path  
+  - QGIS library path  
+  - GDAL library path  
+  - **OSGeo4W** (Windows only) libraries/DLLs path
 
 ## 🛠️ Build Instructions
 
-### **Step 1: Clone the repository**
+### Step 1: Clone the repository
 
-```bash
-git clone https://github.com/manya-technologies/qgis-qt-mapviewer-demo.git
-cd qgis-qt-mapviewer-demo
-```
+### Step 2: Set up Qt Creator kit and run
 
----
-
-### 🛠️ Step 2: Run `qmake` and build
-
-#### 🔹 On Linux:
-
-```bash
-qmake
-make
-./qgis-qt-mapviewer-demo
-```
-
-#### 🔹 On Windows (via Qt command prompt):
-
-```bat
-qmake
-nmake   (or mingw32-make)
-qgis-qt-mapviewer-demo.exe
-```
-
----
+- Configure Qt Creator with:  
+  - **Visual Studio 2022 kit** (Windows) or  
+  - **MinGW64 kit** (Linux/Ubuntu)  
+- Open the project in **Qt Creator**  
+- Compile and run from within Qt Creator  
 
 ## 📂 Sample Shapefile
 
-Place your sample shapefile (`Borders.shp`, `Borders.dbf`, `Borders.shx`) inside the `resources/` directory,  
-or update the path in `main.cpp` to point to your custom shapefile.
-
----
+A sample shapefile (`world.shp`, `world.dbf`, `world.shx`) is included in the `shapefiles/` directory.  
+You can also replace it with your own shapefile by updating the path in `main.cpp`.  
 
 ## 🧾 License
 
-This project is licensed under the **MIT License**.  
+This project is licensed under the MIT License.  
 See the [LICENSE](LICENSE) file for more details.
-
----
 
 ## 💬 Contact
 
