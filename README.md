@@ -48,7 +48,7 @@ A minimal Qt C++ demo application showing how to embed a QGIS map canvas and dis
 ## 📂 Sample Shapefile
 
 A sample shapefile (`world.shp`, `world.dbf`, `world.shx`) is included in the `shapefiles/` directory.  
-You can also replace it with your own shapefile by updating the path in `main.cpp`.  
+You can also replace it with your own shapefile by updating the path in `mainwindow.cpp`.  
 
 ## 🧾 License
 
